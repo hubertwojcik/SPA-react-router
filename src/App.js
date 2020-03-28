@@ -5,7 +5,16 @@ import "./styles/App.css";
 function App() {
 	return (
 		<Router>
-			<div>Hello</div>
+			<div className="app">
+				<aside></aside>
+				<header></header>
+				<main>
+					<section className="main"></section>
+					<section className="form">
+						<footer></footer>
+					</section>
+				</main>
+			</div>
 		</Router>
 	);
 }
