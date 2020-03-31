@@ -10,7 +10,7 @@ const NaturePage = ({ match }) => {
 	return (
 		<PageWrapper>
 			<div className="main">
-				<div className="main__left">
+				<div className="main__navigation">
 					<NatureListPage />
 				</div>
 				<Page id={match.params.id} />
