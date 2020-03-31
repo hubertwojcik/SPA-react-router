@@ -26,14 +26,6 @@
 	}
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100vw;
-	height: 10vh;
-	background-color: black;
-}
-
 .form {
 	display: flex;
 	flex-direction: column;
@@ -82,31 +74,23 @@
 		transform: translateY(-4rem);
 		color: black;
 	}
-	&__radio-container {
+
+	&__checkbox {
 		display: flex;
-		align-items: center;
 		justify-content: space-around;
-		width: 90%;
+		align-content: center;
+		width: 30%;
+		&-input {
+			height: 1.5rem;
+			width: 1.5rem;
+		}
 	}
-	&__radio-group {
-		display: flex;
-		align-items: center;
-		width: 45%;
-	}
-	&__radio-input {
-		width: 1.5rem;
-		height: 1.5rem;
-		background-color: #262626;
-		cursor: pointer;
-	}
-
-	&__radio-label {
-		font-size: 15px;
-		cursor: pointer;
+	&__label-checkbox {
+		align-self: center;
+		margin-left: 15;
+		font-weight: bold;
 		color: #d9d9d9;
-		padding-left: 1rem;
 	}
-
 	&__button {
 		align-self: center;
 		transform: translateX(-10%);
@@ -122,4 +106,12 @@
 		text-align: center;
 		font-weight: bold;
 	}
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 10vh;
+	background-color: black;
 }
